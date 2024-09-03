@@ -1,14 +1,11 @@
-
-export const pageName = "Jazak Market";
-export const primaryColor = "#000000";
-export const backgroundColor = "#FFFFFF";
+export const pageName = 'Jazak Market';
+export const primaryColor = '#F99442';
+export const backgroundColor = '#FFFFFF';
 export const makeClearBackground = (color) => {
   return {
     backgroundColor: color,
-  }
-}
-
-
+  };
+};
 
 export const navData = [
   {

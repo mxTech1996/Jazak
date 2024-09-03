@@ -37,7 +37,7 @@ const Navbar = () => {
       onRedirect={(path) => router.push(path)}
       onSearch={(value) => {}}
       stylesContentLink={{
-        backgroundColor: '#5E6F6D',
+        backgroundColor: '#FDDDC5',
         justifyContent: 'center',
         alignItems: 'center',
       }}

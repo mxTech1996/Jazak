@@ -27,13 +27,14 @@ export default function Home() {
       <Navbar />
       <div className='relative'>
         <Hero
-          variant='background-img'
+          variant='carousel'
           src={dataSite.image_hero}
           colorText='white'
           title={dataSite.subtitle}
           description={dataSite.description}
           srcSecondary={dataSite.image_hero2}
           withSubView
+          images={[dataSite.image_hero, dataSite.image_hero2]}
           styleTextSecondSection={{
             color: 'black',
           }}
@@ -96,14 +97,14 @@ export default function Home() {
             <ProductSection
               withCategoryFilter={true}
               title='All Courses'
-              gridColumns={2}
+              gridColumns={4}
               variant='grid'
               productsPerPage={1}
               productItemVariant='vertical'
               onClickImage={(id) => {
                 router.push(`/product/${id}`);
               }}
-              productVersion='1'
+              productVersion='3'
               carouselOptions={{
                 backgroundColor: 'transparent',
               }}
@@ -135,7 +136,7 @@ export default function Home() {
             }}
             variantItem='text'
             variant='carousel'
-            backgroundColor='#80A18D'
+            backgroundColor='#FDDDC5'
             references={dataSite.references}
             gridColumns={2}
             titleAlign='center'
